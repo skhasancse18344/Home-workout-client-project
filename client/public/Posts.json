@@ -1,0 +1,57 @@
+[
+    {
+    "id":1,
+    "title":"Push Up",
+    "discription":"No matter your age or athletic ability, strength training is the key to flexibility, mobility, improved performance and lower injury risk. Anyone, at any fitness level, can and should strength train. And it doesn't have to take hours at the gym to see results. ",
+    "image":"https://prod-ne-cdn-media.puregym.com/media/819394/gym-workout-plan-for-gaining-muscle_header.jpg?quality=80&mode=pad&width=992",
+    "Muscle_group":"Group Name 1",
+    "Time":"12:30AM",
+    "Date":"12-5-2023"
+},
+    {
+    "id":2,
+    "title":"Push Up",
+    "discription":"No matter your age or athletic ability, strength training is the key to flexibility, mobility, improved performance and lower injury risk. Anyone, at any fitness level, can and should strength train. And it doesn't have to take hours at the gym to see results. ",
+    "image":"https://prod-ne-cdn-media.puregym.com/media/819394/gym-workout-plan-for-gaining-muscle_header.jpg?quality=80&mode=pad&width=992",
+    "Muscle_group":"Group Name 1",
+    "Time":"12:30AM",
+    "Date":"12-5-2023"
+},
+    {
+    "id":3,
+    "title":"Push Up",
+    "discription":"No matter your age or athletic ability, strength training is the key to flexibility, mobility, improved performance and lower injury risk. Anyone, at any fitness level, can and should strength train. And it doesn't have to take hours at the gym to see results. ",
+    "image":"https://prod-ne-cdn-media.puregym.com/media/819394/gym-workout-plan-for-gaining-muscle_header.jpg?quality=80&mode=pad&width=992",
+    "Muscle_group":"Group Name 1",
+    "Time":"12:30AM",
+    "Date":"12-5-2023"
+},
+    {
+    "id":4,
+    "title":"Push Up",
+    "discription":"No matter your age or athletic ability, strength training is the key to flexibility, mobility, improved performance and lower injury risk. Anyone, at any fitness level, can and should strength train. And it doesn't have to take hours at the gym to see results. ",
+    "image":"https://prod-ne-cdn-media.puregym.com/media/819394/gym-workout-plan-for-gaining-muscle_header.jpg?quality=80&mode=pad&width=992",
+    "Muscle_group":"Group Name 1",
+    "Time":"12:30AM",
+    "Date":"12-5-2023"
+},
+    {
+    "id":5,
+    "title":"Push Up",
+    "discription":"No matter your age or athletic ability, strength training is the key to flexibility, mobility, improved performance and lower injury risk. Anyone, at any fitness level, can and should strength train. And it doesn't have to take hours at the gym to see results. ",
+    "image":"https://prod-ne-cdn-media.puregym.com/media/819394/gym-workout-plan-for-gaining-muscle_header.jpg?quality=80&mode=pad&width=992",
+    "Muscle_group":"Group Name 1",
+    "Time":"12:30AM",
+    "Date":"12-5-2023"
+},
+    {
+    "id":6,
+    "title":"Push Up",
+    "discription":"No matter your age or athletic ability, strength training is the key to flexibility, mobility, improved performance and lower injury risk. Anyone, at any fitness level, can and should strength train. And it doesn't have to take hours at the gym to see results. ",
+    "image":"https://prod-ne-cdn-media.puregym.com/media/819394/gym-workout-plan-for-gaining-muscle_header.jpg?quality=80&mode=pad&width=992",
+    "Muscle_group":"Group Name 1",
+    "Time":"12:30AM",
+    "Date":"12-5-2023"
+}
+ 
+]
