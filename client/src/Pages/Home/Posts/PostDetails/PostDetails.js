@@ -14,28 +14,25 @@ const PostDetails = () => {
     const { _id, title, description, image, muscleGroupId } = postDetails;
     const userEmail = user?.email;
 
-    fetch("http://localhost:5000/saveWorkout", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
+     const url = "http://localhost:5000/saveWorkout";
+
+    axios
+      .post(url, {
         _id,
         title,
         description,
         image,
         muscleGroupId,
         userEmail,
-      }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.acknowledged) {
-          toast.success('Workout Saved  Successfully')
+      })
+      .then((response) => {
+        if (response?.data.acknowledged) {
+          toast.success("Workout Saved  Successfully");
         } else {
-          toast.error('Workout Already Saved')
+          toast.error("Workout Already Saved");
         }
       });
+    
   };
   return (
     <div className="w-full flex justify-center " style={{ color: "white" }}>
