@@ -31,6 +31,8 @@ const PostDetails = () => {
         } else {
           toast.error("Workout Already Saved");
         }
+      }).catch((error) => {
+        console.log(error);
       });
     
   };
