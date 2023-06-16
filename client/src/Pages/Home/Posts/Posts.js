@@ -14,22 +14,29 @@ const Posts = () => {
   const [size, setSize] = useState(6);
   const pages = Math.ceil(count / size);
  
-  useEffect(() => {
-    fetch("http://localhost:5000/getAllCategory")
-      .then((res) => res.json())
-      .then((data) => {
-        setSearchCategory(data)
+ useEffect(() => {
+    const url = "http://localhost:5000/getAllCategory";
+    axios
+      .get(url)
+      .then((response) => {
+        setSearchCategory(response?.data);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   }, [setSearchCategory]);
 
   useEffect(() => {
     const url = `http://localhost:5000/getAllPost?page=${page}&size=${size}&search=${search}&category=${category}`;
-    // console.log(url);
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        setPosts(data?.result);
-        setCount(data?.count);
+   
+    axios
+      .get(url)
+      .then((response) => {
+        setPosts(response?.data?.result);
+        setCount(response?.data?.count);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   }, [page, size, search, category]);
 
