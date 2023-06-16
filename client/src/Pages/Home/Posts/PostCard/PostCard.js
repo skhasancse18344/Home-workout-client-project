@@ -12,19 +12,20 @@ const PostCard = ({ post }) => {
     const {_id, title, description, image, muscleGroupId } = post;
     const userEmail = user?.email;
    
-    fetch("http://localhost:5000/saveWorkout", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({_id, title,description,image,muscleGroupId,userEmail}),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.acknowledged) {
-          toast.success('Workout Saved Successfully')
-          } else {
-            toast.error('Workout Already Saved');
+   axios
+      .post("http://localhost:5000/saveWorkout", {
+        _id,
+        title,
+        description,
+        image,
+        muscleGroupId,
+        userEmail,
+      })
+      .then((response) => {
+        if (response?.data.acknowledged) {
+          toast.success("Workout Saved Successfully");
+        } else {
+          toast.error("Workout Already Saved");
         }
       });
   };
